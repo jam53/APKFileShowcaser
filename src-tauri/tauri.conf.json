@@ -2,7 +2,7 @@
   "build": {
     "beforeDevCommand": "npm run dev",
     "beforeBuildCommand": "npm run build",
-    "beforeBundleCommand": ".\\Dependencies\\upx.exe --ultra-brute .\\src-tauri\\target\\release\\Takma.exe",
+    "beforeBundleCommand": ".\\Dependencies\\upx.exe --ultra-brute .\\src-tauri\\target\\release\\AppName.exe",
     "devPath": "http://localhost:1420",
     "distDir": "../dist"
   },
