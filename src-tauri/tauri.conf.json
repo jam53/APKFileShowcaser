@@ -22,7 +22,14 @@
         "scope": [
             "**"
         ]
-    }
+      },
+      "path": {
+        "all": true
+      },
+      "protocol": {
+        "asset": true,
+        "assetScope": ["**"]
+      }
     },
     "bundle": {
       "active": true,
@@ -47,8 +54,8 @@
         "fullscreen": false,
         "resizable": true,
         "title": "AppName",
-        "width": 800,
-        "height": 600
+        "width": 1000,
+        "height": 535
       }
     ]
   }
