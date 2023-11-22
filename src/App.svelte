@@ -18,7 +18,7 @@
     <div class="qrTextHolder">
         <div class="textHolder">
             <p>
-                Scan the QR code using your phone to download the APK directly, or alternatively, utilize the button below to locate and manually transfer the APK from your computer to your phone.
+                Scan the QR code using your phone to download the {appName} APK directly, or alternatively, utilize the button below to locate and manually transfer the APK from your computer to your phone.
             </p>
         </div>
         {#await resolveResource("resources/QR.svg") then qrImage}
