@@ -18,4 +18,4 @@
   - 1024x1024 px
 - Run the command `npm run tauri icon`
 - Run `npm run tauri build`
-- The executable will be placed in: `src-tauri/target/release/AppName.exe`
+- The executable together with the `resources` folder will be placed in: `src-tauri/target/release/`
