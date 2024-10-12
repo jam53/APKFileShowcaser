@@ -9,7 +9,7 @@
   - Alternatively, you could use winget to install rustup using the following command in PowerShell:
   - `winget install --id Rustlang.Rustup`
 
-## Clone Takma
+## Clone APKFileShowcaser
 - Cloning using *Git*:
     ```
     git clone https://github.com/jam53/APKFileShowcaser.git
