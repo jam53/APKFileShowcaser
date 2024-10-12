@@ -1,12 +1,12 @@
 <script lang="ts">
-    import {resolveResource, resourceDir} from "@tauri-apps/api/path";
+    import {resolve, resolveResource, resourceDir} from "@tauri-apps/api/path";
     import {convertFileSrc, invoke} from "@tauri-apps/api/core";
 
     export let appName: string;
 
     async function showAPKInFolder()
     {
-        const path = (await resourceDir()).substring(4) + "resources\\" +  appName + ".apk";
+        const path = await resolve(await resourceDir(), "resources", appName + ".apk");
 
         await invoke("show_in_folder", {path});
     }
