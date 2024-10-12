@@ -1,7 +1,6 @@
 <script lang="ts">
     import {resolveResource, resourceDir} from "@tauri-apps/api/path";
-    import {convertFileSrc} from "@tauri-apps/api/tauri";
-    import {tauri} from "@tauri-apps/api";
+    import {convertFileSrc, invoke} from "@tauri-apps/api/core";
 
     export let appName: string;
 
@@ -9,7 +8,7 @@
     {
         const path = (await resourceDir()).substring(4) + "resources\\" +  appName + ".apk";
 
-        await tauri.invoke('show_in_folder', {path});
+        await invoke("show_in_folder", {path});
     }
 </script>
 
