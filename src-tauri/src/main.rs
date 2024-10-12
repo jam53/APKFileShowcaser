@@ -2,6 +2,8 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use std::process::Command;
+use std::{fs::metadata, path::PathBuf};
+use fork::{daemon, Fork};
 
 fn main() {
     tauri::Builder::default()
