@@ -2,7 +2,11 @@
     import {resolve, resolveResource, resourceDir} from "@tauri-apps/api/path";
     import {convertFileSrc, invoke} from "@tauri-apps/api/core";
 
-    export let appName: string;
+    interface Props {
+        appName: string;
+    }
+
+    let { appName }: Props = $props();
 
     async function showAPKInFolder()
     {
@@ -24,7 +28,7 @@
             <img class="qr" src={convertFileSrc(qrImage)} alt="">
         {/await}
     </div>
-    <button on:click={showAPKInFolder}>Show in folder</button>
+    <button onclick={showAPKInFolder}>Show in folder</button>
 </main>
 
 <style>

@@ -2,7 +2,9 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use std::process::Command;
+#[cfg(target_os = "linux")]
 use std::{fs::metadata, path::PathBuf};
+#[cfg(target_os = "linux")]
 use fork::{daemon, Fork};
 
 fn main() {
